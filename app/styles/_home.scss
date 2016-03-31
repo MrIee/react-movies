@@ -1,0 +1,147 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #ddd;
+    background-color: black;
+    background-image: url('/app/images/curtain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.75em;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: lightsteelblue;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+a:visited {
+    color: steelblue;
+}
+
+#searchContainer {
+    width: calc(40% + 100px);
+    margin: 0 auto;
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+.searchbar {
+    width: 100%;
+    margin: 0 auto;
+
+    .searchbar-element {
+        height: 50px;
+        font-size: 1.6em;
+        border: 3px ridge white;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 100px);
+        margin: 0;
+        padding: 0 8px;
+        color: #333;
+        border: none;
+        outline: none;
+    }
+    button {
+        width: 100px;
+        padding: 0;
+        color: white;
+        background-color: orange;
+        outline: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+.searchResults {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: #333;
+    border: none;
+
+    ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        a {
+            color: white;
+        }
+
+        li {
+            height: calc( (100vh - 35vh - 50px)/8 );
+            width: auto;
+            list-style: none;
+            cursor: pointer;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+
+            div {
+                width: 90%;
+                float: right;
+                line-height: calc( (100vh - 35vh - 50px)/8 );
+                vertical-align: middle;
+            }
+        }
+
+        li:hover {
+            background-color: #555;
+        }
+    }
+}
+
+#movieInfoWrapper {
+    #searchContainer {
+        top: 20px;
+    }
+}
+
+.movieInfo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 105px;
+    padding: 1em 1em 5em 1em;
+    background-color: rgba(40, 40, 40, 0.95);
+
+    img {
+        float: left;
+        margin-right: 1.5em;
+    }
+
+    div > div {
+        margin-bottom: 1em;
+    }
+}
